@@ -13,8 +13,12 @@ const WinOrLoseCard = props => {
             <div>
               <h1>You Lose</h1>
               <p>Score</p>
-              <h1>{score}/12</h1>
-              <button type="button" onClick={onPlayAgain}>
+              <h1 className="output">{score}/12</h1>
+              <button
+                type="button"
+                onClick={onPlayAgain}
+                className="playAgain-btn"
+              >
                 Play Again
               </button>
             </div>
@@ -30,8 +34,13 @@ const WinOrLoseCard = props => {
             <div>
               <h1>You Won</h1>
               <p>Best Score</p>
-              <p>12/12</p>
-              <button type="button" onClick={onPlayAgain}>
+              color:;
+              <p className="output">12/12</p>
+              <button
+                type="button"
+                onClick={onPlayAgain}
+                className="playAgain-btn"
+              >
                 Play Again
               </button>
             </div>

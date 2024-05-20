@@ -1,5 +1,7 @@
 .nav-bg {
-  background-color: #9796f0;
+  /* background-color: #9796f0; */
+  background-color: #ffffff33;
+  backdrop-filter: blur(1px);
   display: flex;
   justify-content: space-around;
 }

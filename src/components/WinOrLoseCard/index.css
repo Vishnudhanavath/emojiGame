@@ -10,13 +10,24 @@
   justify-content: center;
 }
 .win-lose-container {
-  background-color: rgba(
+  /* background-color: rgba(
     255,
     255,
     255,
     0.6
-  ); /* Semi-transparent white background */
+  ); Semi-transparent white background */
+  background-color: #ffffff33;
   backdrop-filter: blur(1px);
   padding: 60px;
   border-radius: 15px;
+}
+.playAgain-btn {
+  background-color: #ffce27;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+.output {
+  color: #6a59ff;
 }

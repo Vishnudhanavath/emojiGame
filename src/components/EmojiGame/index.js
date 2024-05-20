@@ -145,7 +145,7 @@ class EmojiGame extends Component {
 
   render() {
     const {score, topScore, displayScore} = this.state
-    const {emojisList} = this.props
+    // const {emojisList} = this.props
     const shuffledEmojis = this.shuffledEmojisList()
 
     return (
