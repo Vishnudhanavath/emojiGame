@@ -6,42 +6,44 @@ const WinOrLoseCard = props => {
     playAgain()
   }
   return (
-    <div className="bg-container">
-      {score < 12 ? (
-        <div className="container">
-          <div>
-            <h1>You Lose</h1>
-            <p>Score</p>
-            <h1>{score}/12</h1>
-            <button type="button" onClick={onPlayAgain}>
-              Play Again
-            </button>
+    <div className="bg-container win-lose-bg">
+      <div className="win-lose-container">
+        {score < 12 ? (
+          <div className="container">
+            <div>
+              <h1>You Lose</h1>
+              <p>Score</p>
+              <h1>{score}/12</h1>
+              <button type="button" onClick={onPlayAgain}>
+                Play Again
+              </button>
+            </div>
+            <div>
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/lose-game-img.png"
+                alt="win or lose"
+              />
+            </div>
           </div>
-          <div>
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/lose-game-img.png"
-              alt="lose"
-            />
+        ) : (
+          <div className="container">
+            <div>
+              <h1>You Won</h1>
+              <p>Best Score</p>
+              <p>12/12</p>
+              <button type="button" onClick={onPlayAgain}>
+                Play Again
+              </button>
+            </div>
+            <div>
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/won-game-img.png"
+                alt="won"
+              />
+            </div>
           </div>
-        </div>
-      ) : (
-        <div className="container">
-          <div>
-            <h1>You Won</h1>
-            <p>Best Score</p>
-            <p>12/12</p>
-            <button type="button" onClick={onPlayAgain}>
-              Play Again
-            </button>
-          </div>
-          <div>
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/won-game-img.png"
-              alt="won"
-            />
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }

@@ -13,8 +13,12 @@ const NavBar = props => {
       </div>
       {!displayScore ? (
         <div className="score-container">
-          <p>Score:{score}</p>
-          <p>Top Score:{topScore}</p>
+          <p className="para">
+            Score: <span>{score}</span>
+          </p>
+          <p>
+            Top Score: <span>{topScore}</span>
+          </p>
         </div>
       ) : (
         ''
