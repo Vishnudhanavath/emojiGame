@@ -1,0 +1,15 @@
+.nav-bg {
+  background-color: #9796f0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-img-container {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
+.score-container {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+}
